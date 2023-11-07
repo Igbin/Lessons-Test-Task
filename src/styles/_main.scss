@@ -1,0 +1,21 @@
+@mixin basic-button {
+  width: 170px;
+  min-height: 35px;
+  color: #ffffff;
+  background: #1f966e;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+
+  &:hover {
+    background: #5dbf9f;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
